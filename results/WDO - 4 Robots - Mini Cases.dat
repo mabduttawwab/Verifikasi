@@ -1,0 +1,827 @@
+>_ Initial Conditions:
+> Initial Route
+Robot Route: 
+   Robot-1                : [23, 24, 25, 26]
+   Robot-2                : [1, 2, 3, 4, 5, 6, 20]
+   Robot-3                : [94, 93, 52, 53, 22]
+   Robot-4                : [21, 27, 28, 29, 54, 55, 91, 92, 95]
+Robot Distance, [mm]      : [2389.76  3314.095 3629.334 4224.502]
+Robot Time,     [s]       : [42.898 55.141 56.293 56.245]
+Cycle Time,     [s]       : [42.898 56.293 56.245]
+Lini Time,      [s]       : 56.293
+Balance Cycle Times       : 93.518 %
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+>_ START OPTIMIZING
+>_ Iteration-1
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [23, 24, 25, 26]
+   Robot-2                : [1, 2, 3, 4, 5, 6, 20]
+   Robot-3                : [94, 93, 52, 53, 22]
+   Robot-4                : [21, 27, 28, 29, 54, 55, 91, 92, 95]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [20  6  5  4  3  1  2]
+   Robot-3                : [22 52 53 93 94]
+   Robot-4                : [29 28 27 21 91 92 95 54 55]
+Robot Distance, [mm]      : [2331.414 3301.66  3559.572 3909.274]
+Robot Time,     [s]       : [42.314 55.017 55.596 53.093]
+Cycle Time,     [s]       : [42.314 55.596 53.093]
+Lini Time,      [s]       : 55.596
+Balance Cycle Times       : 92.642 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 3 to 1. Point to add: 94
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 93
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 53
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 52
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 22
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 4. Point to add: 94
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [20  6  5  4  3  1  2]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 21 91 92 95 54 55 94]
+
+>_ Iteration-2
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [20  6  5  4  3  1  2]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 21 91 92 95 54 55 94]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [95 94 92 91 54 55 21 27 28 29]
+Robot Distance, [mm]      : [2331.414 3301.66  3542.94  4182.995]
+Robot Time,     [s]       : [42.314 55.017 54.429 56.83 ]
+Cycle Time,     [s]       : [42.314 55.017 56.83 ]
+Lini Time,      [s]       : 56.83
+Balance Cycle Times       : 91.761 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 4 to 1. Point to add: 95
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 55
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 94
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 54
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 28
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 27
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 92
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 91
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 21
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 3. Point to add: 95
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [22 52 53 93 95]
+   Robot-4                : [94 92 91 54 55 21 27 28 29]
+
+>_ Iteration-3
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [22 52 53 93 95]
+   Robot-4                : [94 92 91 54 55 21 27 28 29]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [95 93 53 52 22]
+   Robot-4                : [29 28 27 21 55 54 91 92 94]
+Robot Distance, [mm]      : [2331.414 3301.66  3601.287 4101.717]
+Robot Time,     [s]       : [42.314 55.017 56.013 55.017]
+Cycle Time,     [s]       : [42.314 56.013 55.017]
+Lini Time,      [s]       : 56.013
+Balance Cycle Times       : 92.997 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 3 to 1. Point to add: 95
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 93
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 53
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 52
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 22
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 2. Point to add: 95
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 3 to 2. Point to add: 93
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 3 to 2. Point to add: 53
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 3 to 2. Point to add: 52
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 3 to 2. Point to add: 22
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20 22]
+   Robot-3                : [95 93 53 52]
+   Robot-4                : [29 28 27 21 55 54 91 92 94]
+
+>_ Iteration-4
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20 22]
+   Robot-3                : [95 93 53 52]
+   Robot-4                : [29 28 27 21 55 54 91 92 94]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 20 22]
+   Robot-3                : [95 93 52 53]
+   Robot-4                : [29 28 27 21 91 92 94 54 55]
+Robot Distance, [mm]      : [2331.414 3393.393 2317.143 3829.637]
+Robot Time,     [s]       : [42.314 56.934 42.171 52.296]
+Cycle Time,     [s]       : [42.314 56.934 52.296]
+Lini Time,      [s]       : 56.934
+Balance Cycle Times       : 85.062 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 2 to 3. Point to add: 22
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [95 93 52 53 22]
+   Robot-4                : [29 28 27 21 91 92 94 54 55]
+
+>_ Iteration-5
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [95 93 52 53 22]
+   Robot-4                : [29 28 27 21 91 92 94 54 55]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [22 52 53 93 95]
+   Robot-4                : [29 28 27 21 91 92 94 54 55]
+Robot Distance, [mm]      : [2331.414 3301.66  3589.518 3829.637]
+Robot Time,     [s]       : [42.314 55.017 55.895 52.296]
+Cycle Time,     [s]       : [42.314 55.895 52.296]
+Lini Time,      [s]       : 55.895
+Balance Cycle Times       : 91.923 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 3 to 1. Point to add: 95
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 93
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 53
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 52
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 22
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 4. Point to add: 95
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 21 91 92 94 54 55 95]
+
+>_ Iteration-6
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 21 91 92 94 54 55 95]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 20]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 3301.66  3542.94  3909.296]
+Robot Time,     [s]       : [42.314 55.017 54.429 54.093]
+Cycle Time,     [s]       : [42.314 55.017 54.093]
+Lini Time,      [s]       : 55.017
+Balance Cycle Times       : 93.541 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 2 to 1. Point to add: 20
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 2 to 1. Point to add: 6
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 5
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 4
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 3
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 1
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 2
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 4. Point to add: 20
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 21 91 92 94 95 54 55 20]
+
+>_ Iteration-7
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 21 91 92 94 95 54 55 20]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [6 5 4 3 1 2]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 20 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 2155.474 3542.94  3947.311]
+Robot Time,     [s]       : [42.314 42.555 54.429 55.473]
+Cycle Time,     [s]       : [42.314 54.429 55.473]
+Lini Time,      [s]       : 55.473
+Balance Cycle Times       : 87.777 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 4 to 1. Point to add: 95
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 55
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 94
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 54
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 28
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 27
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 92
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 91
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 20
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 21
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 2. Point to add: 95
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 4 to 2. Point to add: 29
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 6  5  4  3  1  2 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+
+>_ Iteration-8
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 6  5  4  3  1  2 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 29]
+   Robot-3                : [93 53 52 22]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 3803.605 3554.709 3896.448]
+Robot Time,     [s]       : [42.314 60.036 54.547 53.964]
+Cycle Time,     [s]       : [42.314 60.036 53.964]
+Lini Time,      [s]       : 60.036
+Balance Cycle Times       : 87.806 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 2 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 2 to 1. Point to add: 6
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 5
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 4
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 3
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 1
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 2
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 4. Point to add: 29
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [93 53 52 22]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55 29]
+
+>_ Iteration-9
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [93 53 52 22]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55 29]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 20 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 2155.474 3542.94  3947.311]
+Robot Time,     [s]       : [42.314 42.555 54.429 55.473]
+Cycle Time,     [s]       : [42.314 54.429 55.473]
+Lini Time,      [s]       : 55.473
+Balance Cycle Times       : 87.777 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 4 to 1. Point to add: 95
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 55
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 94
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 54
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 28
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 27
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 92
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 91
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 20
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 21
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 2. Point to add: 95
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 4 to 2. Point to add: 29
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+
+>_ Iteration-10
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [ 2  1  3  4  5  6 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 54 55 95 94 92 91]
+Robot Distance, [mm]      : [2331.414 3803.605 3542.94  4131.112]
+Robot Time,     [s]       : [42.314 60.036 54.429 56.311]
+Cycle Time,     [s]       : [42.314 60.036 56.311]
+Lini Time,      [s]       : 60.036
+Balance Cycle Times       : 88.734 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 2 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 2 to 1. Point to add: 6
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 5
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 4
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 3
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 1
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 2
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 3. Point to add: 29
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93 29]
+   Robot-4                : [28 27 20 21 54 55 95 94 92 91]
+
+>_ Iteration-11
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93 29]
+   Robot-4                : [28 27 20 21 54 55 95 94 92 91]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [29 22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 2155.474 3635.583 3896.448]
+Robot Time,     [s]       : [42.314 42.555 56.356 53.964]
+Cycle Time,     [s]       : [42.314 56.356 53.964]
+Lini Time,      [s]       : 56.356
+Balance Cycle Times       : 86.588 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 3 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 93
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 53
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 52
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 1. Point to add: 22
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 3 to 2. Point to add: 29
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+
+>_ Iteration-12
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 3803.605 3542.94  3896.448]
+Robot Time,     [s]       : [42.314 60.036 54.429 53.964]
+Cycle Time,     [s]       : [42.314 60.036 53.964]
+Lini Time,      [s]       : 60.036
+Balance Cycle Times       : 87.757 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 2 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 2 to 1. Point to add: 6
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 5
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 4
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 3
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 1
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 2
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 4. Point to add: 29
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55 29]
+
+>_ Iteration-13
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55 29]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [6 5 4 3 1 2]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 20 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 2155.474 3542.94  3947.311]
+Robot Time,     [s]       : [42.314 42.555 54.429 55.473]
+Cycle Time,     [s]       : [42.314 54.429 55.473]
+Lini Time,      [s]       : 55.473
+Balance Cycle Times       : 87.777 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 4 to 1. Point to add: 95
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 55
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 94
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 54
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 28
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 27
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 92
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 91
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 20
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 1. Point to add: 21
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 4 to 2. Point to add: 95
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 4 to 2. Point to add: 29
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 6  5  4  3  1  2 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+
+>_ Iteration-14
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 6  5  4  3  1  2 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [ 2  1  3  4  5  6 29]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 3803.605 3542.94  3896.448]
+Robot Time,     [s]       : [42.314 60.036 54.429 53.964]
+Cycle Time,     [s]       : [42.314 60.036 53.964]
+Lini Time,      [s]       : 60.036
+Balance Cycle Times       : 87.757 %
+need balance = True
+
+> Perform Point Balancing
+> Transfer point from robot 2 to 1. Point to add: 29
+Transfer point is aborted: Precedent is not fulfilled
+> Transfer point from robot 2 to 1. Point to add: 6
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 5
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 4
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 3
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 1
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 1. Point to add: 2
+Transfer point is aborted: mismatch of Gun Type
+> Transfer point from robot 2 to 4. Point to add: 29
+> Constraints check, (True => Pass)
+1. Check gun-type            : True
+2. Check precedent           : True
+3. Check component           : True
+
+> Route for next iteration
+Robot Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55 29]
+
+>_ Iteration-15
+> Performing MOGA
+> Initial Route,
+   Robot-1                : [24 23 25 26]
+   Robot-2                : [2 1 3 4 5 6]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [28 27 20 21 91 92 94 95 54 55 29]
+> Perform Interference Algorithm
+Done
+> Start optimizing
+Optimizing Route in robot 1 .../
+Optimizing Route in robot 2 .../
+Optimizing Route in robot 3 .../
+Optimizing Route in robot 4 .../
+> Optimized Route
+   Robot-1                : [26 25 23 24]
+   Robot-2                : [6 5 4 3 1 2]
+   Robot-3                : [22 52 53 93]
+   Robot-4                : [29 28 27 20 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 2155.474 3542.94  3947.311]
+Robot Time,     [s]       : [42.314 42.555 54.429 55.473]
+Cycle Time,     [s]       : [42.314 54.429 55.473]
+Lini Time,      [s]       : 55.473
+Balance Cycle Times       : 87.777 %
+need balance = False
+
+Cycle Time,     [s]       : [42.314 55.017 54.093]
+Lini Time,      [s]       : 55.017
+>_ Optimizing is Done
+
+>_ FINAL RESULTS
+Optimized Route:
+   Robot-1                  : [26 25 23 24]
+   Robot-2                  : [ 2  1  3  4  5  6 20]
+   Robot-3                  : [22 52 53 93]
+   Robot-4                  : [29 28 27 21 91 92 94 95 54 55]
+Robot Distance, [mm]      : [2331.414 3301.66  3542.94  3909.296]
+Robot Time,     [s]       : [42.314 55.017 54.429 54.093]
+Balance Cycle Times       : 93.541 %
